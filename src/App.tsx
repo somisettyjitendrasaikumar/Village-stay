@@ -3,14 +3,15 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
-import DestinationsPage from './pages/DestinationsPage';
+import EnhancedDestinationsPage from './pages/EnhancedDestinationsPage';
 import DestinationDetailPage from './pages/DestinationDetailPage';
 import BookingPage from './pages/BookingPage';
 import UserDashboard from './pages/UserDashboard';
 import MarketplacePage from './pages/MarketplacePage';
 import MoneyFlowPage from './pages/MoneyFlowPage';
 import BecomeHostPage from './pages/BecomeHostPage';
-import { User, Destination } from './types';
+import { User } from './types';
+import { Destination } from './data/destinations';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -50,7 +51,7 @@ function App() {
         return <LoginPage onLogin={handleLogin} />;
       case 'destinations':
         return (
-          <DestinationsPage
+          <EnhancedDestinationsPage
             onDestinationSelect={handleDestinationSelect}
             onBooking={handleBooking}
           />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Star, MapPin, Calendar, Users, Heart, Share2, Camera, Leaf, Globe, Award, Download } from 'lucide-react';
-import { Destination } from '../types';
+import { Destination } from '../data/destinations';
 import { useLanguage } from '../contexts/LanguageContext';
 import { generateDestinationPDF } from '../utils/pdfGenerator';
 

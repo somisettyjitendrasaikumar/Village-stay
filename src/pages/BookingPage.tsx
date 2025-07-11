@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Users, CreditCard, Shield, ArrowLeft, CheckCircle, Info } from 'lucide-react';
-import { Destination, User } from '../types';
+import { User } from '../types';
+import { Destination } from '../data/destinations';
 
 interface BookingPageProps {
   destination: Destination;
