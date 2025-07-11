@@ -37,6 +37,10 @@ export interface Destination {
   nearbyAttractions: string[];
   localCuisine: string[];
   culturalExperiences: string[];
+  coordinates: {
+    lat: number;
+    lng: number;
+  };
 }
 
 export const destinationsByState: StateDestination[] = [
@@ -53,9 +57,10 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.8,
         reviews: 147,
         images: [
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg',
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg',
-          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg'
+          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
           'Coffee plantation tours with local farmers',
@@ -91,7 +96,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['tribal culture', 'coffee', 'nature', 'waterfalls', 'eco-tourism'],
         nearbyAttractions: ['Borra Caves', 'Ananthagiri Hills', 'Katiki Falls', 'Padmapuram Gardens'],
         localCuisine: ['Bamboo chicken', 'Tribal rice varieties', 'Forest honey', 'Organic vegetables'],
-        culturalExperiences: ['Tribal festivals', 'Traditional music', 'Handicraft making', 'Storytelling sessions']
+        culturalExperiences: ['Tribal festivals', 'Traditional music', 'Handicraft making', 'Storytelling sessions'],
+        coordinates: { lat: 18.3273, lng: 82.8739 }
       },
       {
         id: 'ap-2',
@@ -103,8 +109,10 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.7,
         reviews: 98,
         images: [
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg',
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg'
+          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
           'Apple orchard tours and fruit picking',
@@ -140,7 +148,60 @@ export const destinationsByState: StateDestination[] = [
         tags: ['mountains', 'apple orchards', 'cool climate', 'farming', 'peaceful'],
         nearbyAttractions: ['Kothapalli Waterfalls', 'Thajangi Reservoir', 'Galikonda View Point'],
         localCuisine: ['Fresh apples', 'Mountain vegetables', 'Traditional millet dishes', 'Herbal teas'],
-        culturalExperiences: ['Farming traditions', 'Mountain folklore', 'Seasonal festivals', 'Community gatherings']
+        culturalExperiences: ['Farming traditions', 'Mountain folklore', 'Seasonal festivals', 'Community gatherings'],
+        coordinates: { lat: 17.9833, lng: 82.6167 }
+      },
+      {
+        id: 'ap-3',
+        name: 'Maredumilli',
+        location: 'East Godavari District',
+        state: 'Andhra Pradesh',
+        description: 'Immerse yourself in pristine forests, ancient temples, and traditional tribal lifestyle in this biodiversity hotspot.',
+        price: 2800,
+        rating: 4.9,
+        reviews: 156,
+        images: [
+          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
+        ],
+        activities: [
+          'Forest trekking and wildlife spotting',
+          'Ancient temple visits and spiritual tours',
+          'Bird watching and nature photography',
+          'Tribal craft workshops and demonstrations',
+          'River rafting in Pampa River',
+          'Bamboo house construction experience',
+          'Traditional fishing with locals',
+          'Medicinal plant walks with tribal healers',
+          'Eco-friendly camping in forest clearings',
+          'Cultural performances by tribal communities'
+        ],
+        accommodation: ['Forest lodges', 'Tribal homestays', 'Tree houses'],
+        bestSeason: ['October', 'November', 'December', 'January', 'February', 'March'],
+        idealFor: ['Wildlife enthusiasts', 'Adventure seekers', 'Spiritual travelers', 'Eco-tourists'],
+        budgetCategory: 'mid-range',
+        maxGroupSize: 10,
+        minGroupSize: 2,
+        duration: '3-4 days',
+        difficulty: 'moderate',
+        sustainability: {
+          carbonFootprint: 'Forest conservation focused',
+          communityImpact: '95% revenue to tribal communities',
+          culturalPreservation: 'Ancient tribal traditions maintained'
+        },
+        hostInfo: {
+          name: 'Venu Tribal Cooperative',
+          experience: '25+ years in forest conservation',
+          languages: ['Telugu', 'Gondi', 'Hindi', 'English']
+        },
+        availability: [],
+        tags: ['forests', 'wildlife', 'temples', 'tribal culture', 'adventure'],
+        nearbyAttractions: ['Rampa Waterfalls', 'Jalatarangini Waterfalls', 'Amruthavalli Waterfalls'],
+        localCuisine: ['Forest vegetables', 'Bamboo shoot curry', 'Wild honey', 'Tribal rice preparations'],
+        culturalExperiences: ['Tribal festivals', 'Traditional hunting methods', 'Forest worship rituals', 'Ancestral ceremonies'],
+        coordinates: { lat: 17.2833, lng: 81.4667 }
       }
     ]
   },
@@ -157,16 +218,18 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.6,
         reviews: 89,
         images: [
-          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg',
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg'
+          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
           'Ikat silk weaving workshops with master artisans',
           'Traditional tie-dye technique learning',
           'Handloom operation demonstrations',
-          'Village heritage walks',
-          'Weaver family home visits',
-          'Traditional textile dyeing process',
+          'Village heritage walks and cultural tours',
+          'Weaver family home visits and interactions',
+          'Traditional textile dyeing process observation',
           'Silk thread preparation workshops',
           'Local market visits for authentic textiles',
           'Cultural performances by weaver communities',
@@ -194,7 +257,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['textiles', 'UNESCO', 'weaving', 'silk', 'traditional crafts'],
         nearbyAttractions: ['Yadagirigutta Temple', 'Bhongir Fort', 'Kolanupaka Jain Temple'],
         localCuisine: ['Traditional Telangana thali', 'Pesarattu', 'Gongura dishes', 'Jaggery sweets'],
-        culturalExperiences: ['Weaving traditions', 'Folk songs', 'Traditional festivals', 'Craft exhibitions']
+        culturalExperiences: ['Weaving traditions', 'Folk songs', 'Traditional festivals', 'Craft exhibitions'],
+        coordinates: { lat: 17.2500, lng: 78.9667 }
       },
       {
         id: 'ts-2',
@@ -206,20 +270,22 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.4,
         reviews: 67,
         images: [
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg',
-          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg'
+          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
           'Medak Fort exploration and history tours',
-          'Traditional pottery workshops',
-          'Village agriculture experience',
-          'Bullock cart rides through fields',
-          'Traditional cooking classes',
+          'Traditional pottery workshops with local artisans',
+          'Village agriculture experience and farming',
+          'Bullock cart rides through rural landscapes',
+          'Traditional cooking classes with village families',
           'Folk music and dance performances',
-          'Heritage architecture photography',
-          'Local handicraft making sessions',
+          'Heritage architecture photography sessions',
+          'Local handicraft making workshops',
           'Rural games and sports participation',
-          'Sunset views from fort ramparts'
+          'Sunset views from ancient fort ramparts'
         ],
         accommodation: ['Village homestays', 'Heritage guesthouses', 'Farm stays'],
         bestSeason: ['November', 'December', 'January', 'February', 'March'],
@@ -243,7 +309,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['heritage', 'fort', 'pottery', 'rural life', 'history'],
         nearbyAttractions: ['Medak Cathedral', 'Singur Dam', 'Kondapur Archaeological Site'],
         localCuisine: ['Jowar roti', 'Village-style dal', 'Fresh dairy products', 'Traditional pickles'],
-        culturalExperiences: ['Potter community traditions', 'Folk tales', 'Agricultural festivals', 'Traditional games']
+        culturalExperiences: ['Potter community traditions', 'Folk tales', 'Agricultural festivals', 'Traditional games'],
+        coordinates: { lat: 18.0500, lng: 78.2667 }
       }
     ]
   },
@@ -260,20 +327,22 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.9,
         reviews: 234,
         images: [
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg',
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg'
+          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
-          'Coffee plantation tours and bean picking',
+          'Coffee plantation tours and bean picking experience',
           'Traditional coffee processing workshops',
-          'Kodava cultural experiences and cuisine',
-          'Spice plantation walks',
+          'Kodava cultural experiences and cuisine tasting',
+          'Spice plantation walks and harvesting',
           'River rafting in Barapole River',
-          'Trekking to Abbey Falls',
-          'Wildlife spotting in Nagarhole',
+          'Trekking to Abbey Falls and nature spots',
+          'Wildlife spotting in Nagarhole National Park',
           'Traditional Kodava dance performances',
-          'Homestay cooking classes',
-          'Elephant interaction experiences'
+          'Homestay cooking classes with local families',
+          'Elephant interaction experiences at camps'
         ],
         accommodation: ['Coffee estate homestays', 'Plantation bungalows', 'Eco-resorts'],
         bestSeason: ['October', 'November', 'December', 'January', 'February', 'March', 'April'],
@@ -297,7 +366,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['coffee', 'plantations', 'kodava culture', 'hills', 'adventure'],
         nearbyAttractions: ['Abbey Falls', 'Dubare Elephant Camp', 'Nagarhole National Park', 'Talakaveri'],
         localCuisine: ['Pandi curry', 'Kadambuttu', 'Noolputtu', 'Coorg honey', 'Fresh coffee'],
-        culturalExperiences: ['Kodava festivals', 'Traditional martial arts', 'Folk music', 'Ancestral worship']
+        culturalExperiences: ['Kodava festivals', 'Traditional martial arts', 'Folk music', 'Ancestral worship'],
+        coordinates: { lat: 12.3375, lng: 75.8069 }
       },
       {
         id: 'ka-2',
@@ -309,20 +379,22 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.8,
         reviews: 189,
         images: [
-          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg',
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg'
+          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
-          'UNESCO heritage site exploration',
-          'Ancient temple architecture tours',
-          'Boulder climbing and rock formations',
-          'Tungabhadra River coracle rides',
-          'Sunrise/sunset at Matanga Hill',
-          'Traditional stone carving workshops',
-          'Village cycling tours',
-          'Archaeological site photography',
-          'Local artisan interactions',
-          'Hampi bazaar heritage walks'
+          'UNESCO heritage site exploration and guided tours',
+          'Ancient temple architecture tours with historians',
+          'Boulder climbing and unique rock formations',
+          'Tungabhadra River coracle rides and boating',
+          'Sunrise and sunset viewing at Matanga Hill',
+          'Traditional stone carving workshops with artisans',
+          'Village cycling tours through ancient ruins',
+          'Archaeological site photography expeditions',
+          'Local artisan interactions and craft learning',
+          'Hampi bazaar heritage walks and shopping'
         ],
         accommodation: ['Heritage guesthouses', 'Village homestays', 'Riverside camps'],
         bestSeason: ['October', 'November', 'December', 'January', 'February', 'March'],
@@ -346,7 +418,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['UNESCO', 'heritage', 'temples', 'boulders', 'history'],
         nearbyAttractions: ['Virupaksha Temple', 'Vittala Temple', 'Lotus Mahal', 'Elephant Stables'],
         localCuisine: ['South Indian thali', 'Bisi bele bath', 'Mysore pak', 'Filter coffee'],
-        culturalExperiences: ['Temple festivals', 'Classical music', 'Stone carving traditions', 'Religious ceremonies']
+        culturalExperiences: ['Temple festivals', 'Classical music', 'Stone carving traditions', 'Religious ceremonies'],
+        coordinates: { lat: 15.3350, lng: 76.4600 }
       }
     ]
   },
@@ -363,20 +436,22 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.7,
         reviews: 156,
         images: [
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg',
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg'
+          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
-          'Chettinad mansion architecture tours',
+          'Chettinad mansion architecture tours and exploration',
           'Traditional cooking classes with Chettiar families',
           'Antique and artifact collection visits',
           'Local tile and pottery workshops',
-          'Heritage village walks',
+          'Heritage village walks and cultural immersion',
           'Traditional music and dance performances',
-          'Spice market visits and tours',
+          'Spice market visits and culinary tours',
           'Handloom weaving demonstrations',
           'Photography of unique architectural details',
-          'Cultural storytelling sessions'
+          'Cultural storytelling sessions with elders'
         ],
         accommodation: ['Heritage mansions', 'Traditional Chettinad homes', 'Boutique heritage hotels'],
         bestSeason: ['November', 'December', 'January', 'February', 'March'],
@@ -400,7 +475,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['heritage', 'architecture', 'cuisine', 'mansions', 'culture'],
         nearbyAttractions: ['Athangudi Palace', 'Kundrakudi Murugan Temple', 'Pillaiyarpatti Temple'],
         localCuisine: ['Chettinad chicken', 'Kara kuzhambu', 'Paniyaram', 'Filter coffee', 'Traditional sweets'],
-        culturalExperiences: ['Chettiar traditions', 'Classical music', 'Traditional festivals', 'Ancestral customs']
+        culturalExperiences: ['Chettiar traditions', 'Classical music', 'Traditional festivals', 'Ancestral customs'],
+        coordinates: { lat: 9.8500, lng: 78.6000 }
       },
       {
         id: 'tn-2',
@@ -412,20 +488,22 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.6,
         reviews: 134,
         images: [
-          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg',
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg'
+          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
-          'Thanjavur painting workshops',
+          'Thanjavur painting workshops with master artists',
           'Traditional bronze casting demonstrations',
-          'Bharatanatyam dance performances',
+          'Bharatanatyam dance performances and classes',
           'Rice farming and harvesting experience',
           'Temple architecture and sculpture tours',
-          'Classical music concerts',
+          'Classical music concerts and learning sessions',
           'Traditional weaving workshops',
           'Village pottery making sessions',
           'Bullock cart rides through paddy fields',
-          'Cultural heritage walks'
+          'Cultural heritage walks and storytelling'
         ],
         accommodation: ['Traditional Tamil homes', 'Heritage guesthouses', 'Farm stays'],
         bestSeason: ['November', 'December', 'January', 'February', 'March'],
@@ -449,7 +527,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['arts', 'temples', 'classical music', 'dance', 'heritage'],
         nearbyAttractions: ['Brihadeeswarar Temple', 'Thanjavur Palace', 'Saraswathi Mahal Library'],
         localCuisine: ['Traditional Tamil meals', 'Curd rice', 'Sambar', 'Rasam', 'Payasam'],
-        culturalExperiences: ['Temple festivals', 'Classical performances', 'Traditional crafts', 'Religious ceremonies']
+        culturalExperiences: ['Temple festivals', 'Classical performances', 'Traditional crafts', 'Religious ceremonies'],
+        coordinates: { lat: 10.7870, lng: 79.1378 }
       }
     ]
   },
@@ -466,20 +545,22 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.8,
         reviews: 198,
         images: [
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg',
-          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg'
+          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
-          'Traditional houseboat stays and cruises',
+          'Traditional houseboat stays and backwater cruises',
           'Coconut farming and toddy tapping experience',
           'Backwater fishing with local fishermen',
-          'Coir making workshops',
+          'Coir making workshops and demonstrations',
           'Traditional Kerala cooking classes',
           'Kathakali and Mohiniyattam performances',
           'Village canoe rides through narrow canals',
-          'Ayurvedic massage and treatments',
+          'Ayurvedic massage and wellness treatments',
           'Bird watching in backwater ecosystems',
-          'Sunset photography from houseboats'
+          'Sunset photography from traditional houseboats'
         ],
         accommodation: ['Traditional houseboats', 'Backwater homestays', 'Eco-resorts'],
         bestSeason: ['October', 'November', 'December', 'January', 'February', 'March'],
@@ -503,7 +584,8 @@ export const destinationsByState: StateDestination[] = [
         tags: ['backwaters', 'houseboats', 'coconuts', 'fishing', 'peaceful'],
         nearbyAttractions: ['Vembanad Lake', 'Kumarakom Bird Sanctuary', 'Pathiramanal Island'],
         localCuisine: ['Fish curry', 'Appam', 'Puttu', 'Coconut-based dishes', 'Toddy'],
-        culturalExperiences: ['Boat races', 'Traditional festivals', 'Folk performances', 'Fishing traditions']
+        culturalExperiences: ['Boat races', 'Traditional festivals', 'Folk performances', 'Fishing traditions'],
+        coordinates: { lat: 9.6186, lng: 76.3947 }
       },
       {
         id: 'kl-2',
@@ -515,19 +597,21 @@ export const destinationsByState: StateDestination[] = [
         rating: 4.7,
         reviews: 167,
         images: [
-          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg',
-          'https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg'
+          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
         ],
         activities: [
           'Tribal village visits and cultural interactions',
-          'Spice plantation tours and harvesting',
+          'Spice plantation tours and harvesting experience',
           'Traditional tribal craft workshops',
           'Forest trekking and wildlife spotting',
-          'Bamboo rafting in streams',
+          'Bamboo rafting in mountain streams',
           'Traditional tribal dance performances',
           'Medicinal plant identification walks',
-          'Organic farming experience',
-          'Cave exploration and rock art viewing',
+          'Organic farming experience with tribes',
+          'Cave exploration and ancient rock art viewing',
           'Tribal storytelling sessions around campfires'
         ],
         accommodation: ['Tribal community homestays', 'Eco-lodges', 'Tree houses'],
@@ -552,7 +636,122 @@ export const destinationsByState: StateDestination[] = [
         tags: ['tribal culture', 'spices', 'forests', 'adventure', 'indigenous'],
         nearbyAttractions: ['Edakkal Caves', 'Soochipara Falls', 'Banasura Sagar Dam', 'Chembra Peak'],
         localCuisine: ['Tribal rice varieties', 'Forest vegetables', 'Spiced meats', 'Herbal teas', 'Wild honey'],
-        culturalExperiences: ['Tribal festivals', 'Traditional hunting methods', 'Folk medicine', 'Ancestral rituals']
+        culturalExperiences: ['Tribal festivals', 'Traditional hunting methods', 'Folk medicine', 'Ancestral rituals'],
+        coordinates: { lat: 11.6854, lng: 76.1320 }
+      }
+    ]
+  },
+  {
+    state: 'Rajasthan',
+    destinations: [
+      {
+        id: 'rj-1',
+        name: 'Bishnoi Villages',
+        location: 'Jodhpur District',
+        state: 'Rajasthan',
+        description: 'Experience the eco-friendly lifestyle of Bishnoi community, known for their wildlife conservation and sustainable living practices.',
+        price: 2900,
+        rating: 4.5,
+        reviews: 112,
+        images: [
+          'https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
+        ],
+        activities: [
+          'Wildlife conservation tours with Bishnoi guides',
+          'Traditional handicraft workshops',
+          'Desert safari and camel rides',
+          'Folk music and dance performances',
+          'Traditional cooking classes',
+          'Village walks and cultural interactions',
+          'Pottery and weaving demonstrations',
+          'Organic farming experience',
+          'Sunset photography in desert landscapes',
+          'Storytelling sessions about Bishnoi traditions'
+        ],
+        accommodation: ['Traditional mud houses', 'Desert camps', 'Village homestays'],
+        bestSeason: ['October', 'November', 'December', 'January', 'February', 'March'],
+        idealFor: ['Wildlife enthusiasts', 'Culture lovers', 'Eco-tourists', 'Photography enthusiasts'],
+        budgetCategory: 'mid-range',
+        maxGroupSize: 10,
+        minGroupSize: 2,
+        duration: '2-3 days',
+        difficulty: 'easy',
+        sustainability: {
+          carbonFootprint: 'Zero-waste community practices',
+          communityImpact: '92% revenue to Bishnoi families',
+          culturalPreservation: '500-year-old conservation traditions'
+        },
+        hostInfo: {
+          name: 'Bishnoi Community Collective',
+          experience: '20+ years in eco-tourism',
+          languages: ['Rajasthani', 'Hindi', 'English']
+        },
+        availability: [],
+        tags: ['wildlife conservation', 'desert', 'eco-tourism', 'traditional crafts', 'sustainable living'],
+        nearbyAttractions: ['Guda Bishnoi Lake', 'Khejarli Village', 'Rohet Garh'],
+        localCuisine: ['Dal baati churma', 'Ker sangri', 'Bajra roti', 'Desert honey', 'Traditional sweets'],
+        culturalExperiences: ['Bishnoi festivals', 'Wildlife protection rituals', 'Folk traditions', 'Community gatherings'],
+        coordinates: { lat: 26.2389, lng: 73.0243 }
+      }
+    ]
+  },
+  {
+    state: 'Gujarat',
+    destinations: [
+      {
+        id: 'gj-1',
+        name: 'Kutch Villages',
+        location: 'Kutch District',
+        state: 'Gujarat',
+        description: 'Explore the vibrant handicrafts, salt deserts, and rich cultural heritage of Kutch region with traditional artisan communities.',
+        price: 3100,
+        rating: 4.6,
+        reviews: 143,
+        images: [
+          'https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/1402790/pexels-photo-1402790.jpeg?auto=compress&cs=tinysrgb&w=800',
+          'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=800'
+        ],
+        activities: [
+          'Traditional handicraft workshops with master artisans',
+          'White Rann desert exploration and photography',
+          'Embroidery and mirror work learning sessions',
+          'Salt farming experience and tours',
+          'Folk music and dance performances',
+          'Artisan village visits and cultural immersion',
+          'Traditional block printing workshops',
+          'Camel safari in desert landscapes',
+          'Local market visits for authentic crafts',
+          'Sunset viewing at Great Rann of Kutch'
+        ],
+        accommodation: ['Traditional bhungas (mud houses)', 'Desert resorts', 'Artisan homestays'],
+        bestSeason: ['November', 'December', 'January', 'February', 'March'],
+        idealFor: ['Craft enthusiasts', 'Desert lovers', 'Culture seekers', 'Photography enthusiasts'],
+        budgetCategory: 'mid-range',
+        maxGroupSize: 12,
+        minGroupSize: 2,
+        duration: '3-4 days',
+        difficulty: 'easy',
+        sustainability: {
+          carbonFootprint: 'Traditional craft preservation',
+          communityImpact: '89% revenue to artisan families',
+          culturalPreservation: 'Ancient handicraft traditions maintained'
+        },
+        hostInfo: {
+          name: 'Kutch Artisan Collective',
+          experience: '25+ years in handicraft tourism',
+          languages: ['Gujarati', 'Kutchi', 'Hindi', 'English']
+        },
+        availability: [],
+        tags: ['handicrafts', 'desert', 'embroidery', 'salt farming', 'traditional arts'],
+        nearbyAttractions: ['Great Rann of Kutch', 'Kala Dungar', 'Mandvi Beach', 'Bhuj Palace'],
+        localCuisine: ['Kutchi dabeli', 'Khaman dhokla', 'Gujarati thali', 'Traditional sweets', 'Buttermilk'],
+        culturalExperiences: ['Rann Utsav', 'Traditional crafts', 'Folk performances', 'Artisan traditions'],
+        coordinates: { lat: 23.7337, lng: 69.8597 }
       }
     ]
   }

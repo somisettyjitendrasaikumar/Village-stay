@@ -17,8 +17,22 @@ const MoneyFlowPage: React.FC = () => {
   const [selectedBooking, setSelectedBooking] = useState('recent');
   const [viewMode, setViewMode] = useState<'chart' | 'detailed'>('chart');
 
-  // Sample booking data
-  const bookingAmount = 5250;
+  // Sample booking data with 10 transactions
+  const transactions = [
+    { id: '1', destination: 'Araku Valley', amount: 5250, date: '2024-01-15', status: 'completed' },
+    { id: '2', destination: 'Lambasingi', amount: 6720, date: '2024-01-10', status: 'completed' },
+    { id: '3', destination: 'Coorg Coffee Estates', amount: 7600, date: '2024-01-05', status: 'completed' },
+    { id: '4', destination: 'Pochampally Village', amount: 4400, date: '2023-12-28', status: 'completed' },
+    { id: '5', destination: 'Chettinad Villages', amount: 6400, date: '2023-12-20', status: 'completed' },
+    { id: '6', destination: 'Kumrakonam Backwaters', amount: 8400, date: '2023-12-15', status: 'completed' },
+    { id: '7', destination: 'Hampi Village', amount: 5600, date: '2023-12-10', status: 'completed' },
+    { id: '8', destination: 'Wayanad Tribal Villages', amount: 7200, date: '2023-12-05', status: 'completed' },
+    { id: '9', destination: 'Bishnoi Villages', amount: 5800, date: '2023-11-28', status: 'completed' },
+    { id: '10', destination: 'Kutch Villages', amount: 6200, date: '2023-11-20', status: 'completed' }
+  ];
+
+  const selectedTransaction = transactions.find(t => t.id === selectedBooking) || transactions[0];
+  const bookingAmount = selectedTransaction.amount;
   
   const moneyDistribution: MoneyDistribution[] = [
     {
@@ -155,8 +169,11 @@ Impact Created:
                 onChange={(e) => setSelectedBooking(e.target.value)}
                 className="px-3 py-2 border border-gray-300 rounded-md focus:ring-emerald-500 focus:border-emerald-500"
               >
-                <option value="recent">Recent Booking - Araku Valley (₹5,250)</option>
-                <option value="previous">Previous Booking - Lambasingi (₹6,720)</option>
+                {transactions.map((transaction) => (
+                  <option key={transaction.id} value={transaction.id}>
+                    {transaction.destination} - ₹{transaction.amount.toLocaleString()} ({transaction.date})
+                  </option>
+                ))}
               </select>
             </div>
             

@@ -43,7 +43,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ onDestinationRecommend }) => {
 
   const generateBotResponse = async (userMessage: string): Promise<Message> => {
     // Simulate API delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 800));
 
     const message = userMessage.toLowerCase();
     let response = '';
@@ -156,6 +156,30 @@ const ChatBot: React.FC<ChatBotProps> = ({ onDestinationRecommend }) => {
         "Learn about sustainability",
         "Contact customer support",
         "Share feedback"
+      ];
+    } else if (message.includes('community') || message.includes('connect')) {
+      response = "Our community page is a great place to connect with fellow travelers and local hosts! You can share your experiences, join events, read inspiring stories, and get tips from other community members. It's all about building meaningful connections through rural tourism.";
+      suggestions = [
+        "Visit community page",
+        "Share my travel story",
+        "Find upcoming events",
+        "Connect with hosts"
+      ];
+    } else if (message.includes('experience') || message.includes('activity')) {
+      response = "We offer amazing authentic experiences like traditional craft workshops, cooking classes, adventure activities, and wellness retreats. Each experience is designed to give you deep cultural immersion while supporting local communities. What type of experience interests you most?";
+      suggestions = [
+        "Cultural experiences",
+        "Adventure activities", 
+        "Wellness retreats",
+        "Culinary workshops"
+      ];
+    } else if (message.includes('language') || message.includes('translate')) {
+      response = "VillageStay supports multiple Indian languages including English, Telugu, Hindi, Tamil, and Kannada. You can change the language using the globe icon in the top navigation. All content including destination details, reviews, and booking information will be translated to your preferred language.";
+      suggestions = [
+        "Change language settings",
+        "View in Telugu",
+        "View in Hindi", 
+        "View in Tamil"
       ];
     } else {
       response = "I understand you're looking for information about rural tourism. Could you be more specific? I can help with destination recommendations, budget planning, seasonal advice, cultural experiences, adventure activities, or booking assistance. What would you like to know?";

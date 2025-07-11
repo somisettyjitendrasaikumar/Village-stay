@@ -3,6 +3,8 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import CommunityPage from './pages/CommunityPage';
+import ExperiencesPage from './pages/ExperiencesPage';
 import EnhancedDestinationsPage from './pages/EnhancedDestinationsPage';
 import DestinationDetailPage from './pages/DestinationDetailPage';
 import BookingPage from './pages/BookingPage';
@@ -10,6 +12,7 @@ import UserDashboard from './pages/UserDashboard';
 import MarketplacePage from './pages/MarketplacePage';
 import MoneyFlowPage from './pages/MoneyFlowPage';
 import BecomeHostPage from './pages/BecomeHostPage';
+import AddPlacePage from './pages/AddPlacePage';
 import { User } from './types';
 import { Destination } from './data/destinations';
 
@@ -56,12 +59,18 @@ function App() {
             onBooking={handleBooking}
           />
         );
+      case 'community':
+        return <CommunityPage />;
+      case 'experiences':
+        return <ExperiencesPage />;
       case 'marketplace':
         return <MarketplacePage />;
       case 'money-flow':
         return <MoneyFlowPage />;
       case 'become-host':
         return <BecomeHostPage />;
+      case 'add-place':
+        return <AddPlacePage />;
       case 'destination-detail':
         return selectedDestination ? (
           <DestinationDetailPage

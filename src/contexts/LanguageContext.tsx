@@ -20,6 +20,8 @@ const translations = {
     'nav.money_flow': 'Money Flow',
     'nav.login': 'Login',
     'nav.dashboard': 'Dashboard',
+    'nav.community': 'Community',
+    'nav.experiences': 'Experiences',
     'nav.bookings': 'My Bookings',
     'nav.favorites': 'Favorites',
     'nav.settings': 'Settings',
@@ -59,6 +61,31 @@ const translations = {
     'cta.description': 'Join thousands of travelers who are making a difference through responsible tourism',
     'cta.book': 'Book Your Experience',
     'cta.partner': 'Partner with Us',
+
+    // Community Page
+    'community.title': 'Rural Communities',
+    'community.description': 'Connect with vibrant rural communities across India',
+    'community.join': 'Join Community',
+    'community.members': 'Members',
+    'community.posts': 'Posts',
+    'community.events': 'Events',
+    'community.stories': 'Stories',
+    'community.share_story': 'Share Your Story',
+    'community.upcoming_events': 'Upcoming Events',
+    'community.recent_posts': 'Recent Posts',
+    'community.featured_stories': 'Featured Stories',
+
+    // Experiences Page
+    'experiences.title': 'Authentic Experiences',
+    'experiences.description': 'Discover unique cultural and adventure experiences',
+    'experiences.book': 'Book Experience',
+    'experiences.duration': 'Duration',
+    'experiences.difficulty': 'Difficulty',
+    'experiences.includes': 'Includes',
+    'experiences.cultural': 'Cultural Experiences',
+    'experiences.adventure': 'Adventure Experiences',
+    'experiences.wellness': 'Wellness Experiences',
+    'experiences.culinary': 'Culinary Experiences',
 
     // Marketplace
     'marketplace.title': 'Cultural Marketplace',
@@ -136,6 +163,12 @@ const translations = {
     'common.traditional_crafts': 'Traditional Crafts',
     'common.local_guides': 'Local Guides',
     'common.authentic_experience': 'Authentic Experience',
+    'common.share': 'Share',
+    'common.like': 'Like',
+    'common.reset': 'Reset',
+    'common.add_place': 'Add Place',
+    'common.save': 'Save',
+    'common.cancel': 'Cancel',
   },
   te: {
     // Navigation
@@ -148,6 +181,8 @@ const translations = {
     'nav.money_flow': 'డబ్బు ప్రవాహం',
     'nav.login': 'లాగిన్',
     'nav.dashboard': 'డాష్‌బోర్డ్',
+    'nav.community': 'కమ్యూనిటీ',
+    'nav.experiences': 'అనుభవాలు',
     'nav.bookings': 'నా బుకింగ్‌లు',
     'nav.favorites': 'ఇష్టమైనవి',
     'nav.settings': 'సెట్టింగ్‌లు',
@@ -187,6 +222,31 @@ const translations = {
     'cta.description': 'బాధ్యతాయుత పర్యాటకం ద్వారా మార్పు తెస్తున్న వేలాది మంది ప్రయాణికులతో చేరండి',
     'cta.book': 'మీ అనుభవాన్ని బుక్ చేయండి',
     'cta.partner': 'మాతో భాగస్వామ్యం చేయండి',
+
+    // Community Page
+    'community.title': 'గ్రామీణ కమ్యూనిటీలు',
+    'community.description': 'భారతదేశంలోని చైతన్యవంతమైన గ్రామీణ కమ్యూనిటీలతో కనెక్ట్ అవ్వండి',
+    'community.join': 'కమ్యూనిటీలో చేరండి',
+    'community.members': 'సభ్యులు',
+    'community.posts': 'పోస్ట్‌లు',
+    'community.events': 'కార్యక్రమాలు',
+    'community.stories': 'కథలు',
+    'community.share_story': 'మీ కథను పంచుకోండి',
+    'community.upcoming_events': 'రాబోయే కార్యక్రమాలు',
+    'community.recent_posts': 'ఇటీవలి పోస్ట్‌లు',
+    'community.featured_stories': 'ప్రత్యేక కథలు',
+
+    // Experiences Page
+    'experiences.title': 'వాస్తవిక అనుభవాలు',
+    'experiences.description': 'ప్రత్యేకమైన సాంస్కృతిక మరియు సాహస అనుభవాలను కనుగొనండి',
+    'experiences.book': 'అనుభవాన్ని బుక్ చేయండి',
+    'experiences.duration': 'వ్యవధి',
+    'experiences.difficulty': 'కష్టం',
+    'experiences.includes': 'కలిగి ఉంది',
+    'experiences.cultural': 'సాంస్కృతిక అనుభవాలు',
+    'experiences.adventure': 'సాహస అనుభవాలు',
+    'experiences.wellness': 'ఆరోగ్య అనుభవాలు',
+    'experiences.culinary': 'వంట అనుభవాలు',
 
     // Marketplace
     'marketplace.title': 'సాంస్కృతిక మార్కెట్‌ప్లేస్',
@@ -264,6 +324,12 @@ const translations = {
     'common.traditional_crafts': 'సాంప్రదాయిక హస్తకళలు',
     'common.local_guides': 'స్థానిక గైడ్‌లు',
     'common.authentic_experience': 'వాస్తవిక అనుభవం',
+    'common.share': 'పంచుకోండి',
+    'common.like': 'ఇష్టం',
+    'common.reset': 'రీసెట్',
+    'common.add_place': 'స్థలం జోడించండి',
+    'common.save': 'సేవ్',
+    'common.cancel': 'రద్దు',
   },
   hi: {
     // Navigation
@@ -276,6 +342,8 @@ const translations = {
     'nav.money_flow': 'पैसे का प्रवाह',
     'nav.login': 'लॉगिन',
     'nav.dashboard': 'डैशबोर्ड',
+    'nav.community': 'समुदाय',
+    'nav.experiences': 'अनुभव',
     'nav.bookings': 'मेरी बुकिंग',
     'nav.favorites': 'पसंदीदा',
     'nav.settings': 'सेटिंग्स',
@@ -296,6 +364,10 @@ const translations = {
     'common.download': 'डाउनलोड',
     'common.view_details': 'विवरण देखें',
     'common.book_now': 'अभी बुक करें',
+    'common.share': 'साझा करें',
+    'common.like': 'पसंद',
+    'common.reset': 'रीसेट',
+    'common.add_place': 'स्थान जोड़ें',
   },
   ta: {
     // Navigation
@@ -307,12 +379,16 @@ const translations = {
     'nav.become_host': 'புரவலர் ஆகுங்கள்',
     'nav.money_flow': 'பணப் பாய்ச்சல்',
     'nav.login': 'உள்நுழைவு',
+    'nav.community': 'சமூகம்',
+    'nav.experiences': 'அனுபவங்கள்',
 
     // Common translations for Tamil...
     'common.night': '/இரவு',
     'common.guest': 'விருந்தினர்',
     'common.guests': 'விருந்தினர்கள்',
     'common.download': 'பதிவிறக்கம்',
+    'common.share': 'பகிர்',
+    'common.like': 'விருப்பம்',
   },
   kn: {
     // Navigation
@@ -324,12 +400,16 @@ const translations = {
     'nav.become_host': 'ಆತಿಥೇಯರಾಗಿ',
     'nav.money_flow': 'ಹಣದ ಹರಿವು',
     'nav.login': 'ಲಾಗಿನ್',
+    'nav.community': 'ಸಮುದಾಯ',
+    'nav.experiences': 'ಅನುಭವಗಳು',
 
     // Common translations for Kannada...
     'common.night': '/ರಾತ್ರಿ',
     'common.guest': 'ಅತಿಥಿ',
     'common.guests': 'ಅತಿಥಿಗಳು',
     'common.download': 'ಡೌನ್‌ಲೋಡ್',
+    'common.share': 'ಹಂಚಿಕೊಳ್ಳಿ',
+    'common.like': 'ಇಷ್ಟ',
   }
 };
 

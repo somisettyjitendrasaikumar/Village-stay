@@ -20,8 +20,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage, user, onLo
     { id: 'home', label: t('nav.home'), icon: null },
     { id: 'destinations', label: t('nav.destinations'), icon: null },
     { id: 'experiences', label: t('nav.experiences'), icon: null },
-    { id: 'marketplace', label: t('nav.marketplace'), icon: ShoppingBag },
     { id: 'community', label: t('nav.community'), icon: null },
+    { id: 'marketplace', label: t('nav.marketplace'), icon: ShoppingBag },
     { id: 'money-flow', label: t('nav.money_flow'), icon: TrendingUp },
   ];
 
